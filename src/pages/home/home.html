@@ -1,0 +1,28 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <form [formGroup]="myForm" (ngSubmit)="onSubmitMyForm()">      
+          <ion-item>
+            <ion-icon name="person" item-left color="primary"></ion-icon>
+            <ion-input type="text" placeholder="Campo 1" formControlName="campo1"></ion-input>
+          </ion-item>
+          
+          <ion-item>
+            <ion-icon name="at" item-left color="primary"></ion-icon>
+            <ion-input type="text" placeholder="Campo 2" formControlName="campo2"></ion-input>
+          </ion-item>
+      
+      
+      
+          <br>
+      
+          <button ion-button block type="submit">Submit</button>
+          
+        </form>
+</ion-content>
